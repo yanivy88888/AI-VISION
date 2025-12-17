@@ -1,0 +1,44 @@
+/* =========================
+   AI Vision – Glassmorphism UI
+   ========================= */
+
+.top-bar {
+  background: rgba(255, 255, 255, 0.55);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.top-actions input,
+.top-actions select,
+.top-actions button {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card {
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.12),
+    inset 0 1px 1px rgba(255,255,255,0.6);
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0.4),
+    rgba(255,255,255,0.05)
+  );
+  pointer-events: none;
+}
+
+#adCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background: rgba(255,255,255,0.5);
+}
